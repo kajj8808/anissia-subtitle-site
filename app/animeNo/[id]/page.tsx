@@ -51,6 +51,7 @@ export default async function AnissiaSubtitleDetailPage({
             key={subtitle.id}
             href={subtitle.website}
             className="flex border-b p-5 transition-transform hover:scale-110 active:scale-95"
+            target="_blank"
           >
             <div className="flex items-center justify-center p-5">
               <p className="text-sm text-gray-700">
