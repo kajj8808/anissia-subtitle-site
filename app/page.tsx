@@ -1,6 +1,8 @@
 import db from "@lib/server/db";
 import Link from "next/link";
 
+export const revalidate = 3600; // 1 시간 마다 데이터를 재검증 합니다.
+
 async function getAnissiaAnimations() {
   const anissiaAnimations = await db.animation.findMany({
     orderBy: {
